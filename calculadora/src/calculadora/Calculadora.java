@@ -138,7 +138,7 @@ public class Calculadora extends JFrame {
     }
     
     private void agregaFondo(){
-        ImageIcon fondoImg = new ImageIcon("chayanne.jpg");
+        ImageIcon fondoImg = new ImageIcon("background.jpg");
         fondo.setIcon(new ImageIcon(fondoImg.getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH)));
         fondo.setBounds(0,0,500,500);
         panel.add(fondo);
@@ -175,7 +175,7 @@ public class Calculadora extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
                     double resultadoResta = Double.parseDouble(num1.getText()) - Double.parseDouble(num2.getText());
-                    resultado.setText("El resultado de la\nsuma es: \n\n"+resultadoResta);
+                    resultado.setText("El resultado de la\nresta es: \n\n"+resultadoResta);
                 }catch(NumberFormatException error){
                     resultado.setText("Ingrese solo numeros");
                 }
@@ -191,7 +191,7 @@ public class Calculadora extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
                     double resultadoMultiplicar = Double.parseDouble(num1.getText()) * Double.parseDouble(num2.getText());
-                    resultado.setText("El resultado de la\nsuma es: \n\n"+resultadoMultiplicar);
+                    resultado.setText("El resultado de la\nmultiplicacion es: \n\n"+resultadoMultiplicar);
                 }catch(NumberFormatException error){
                     resultado.setText("Ingrese solo numeros");
                 }
@@ -207,7 +207,7 @@ public class Calculadora extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
                     double resultadoDividir = Double.parseDouble(num1.getText()) / Double.parseDouble(num2.getText());
-                    resultado.setText("El resultado de la\nsuma es: \n\n"+resultadoDividir);
+                    resultado.setText("El resultado de la\ndivision es: \n\n"+resultadoDividir);
                 }catch(NumberFormatException error){
                     resultado.setText("Ingrese solo numeros");
                 }
